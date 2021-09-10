@@ -5,11 +5,14 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <script src="script.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 <body>
- <center> <h1>relay-chat</h1> </center>
-  <p>Irc Like Chat</p>
-  <input type="text" id="textbox" id = "center" size="35" maxlength="100" class = "center">
-  <button type="button" id="submitbutton" class="center" onclick="sendMessage()">Send --></button>
+  
+ <center> <h1>relay chat</h1> </center>
+  <p id = "text"></p>
+  <input type="text" id="textbox" id = "center" size="35" maxlength="100" class = "center" onkeypress="enter()">
+  <!-- <button type="button" id="submitbutton" class="center" onclick="sendMessage()">Send -></button> -->
 
 </body>
 </div>
