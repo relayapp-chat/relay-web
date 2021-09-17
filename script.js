@@ -1,6 +1,6 @@
 let server = window.prompt("What server would you like to connect to? \n(leave blank for default)")
 console.log(server)
-if(server = String(null)) {
+if(server == null) {
   server = "localhost:8080"
 }
 const socket = new WebSocket('ws://' + server);
