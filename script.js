@@ -10,7 +10,7 @@ function sendMessage() {
     const textbox = document.getElementById("textbox")
 
     console.log(textbox.value);
-    socket.send(`{ "channel": "#general", "message": "${textbox.value}" }`);
+    socket.send(textbox.value);
     textbox.value = ""
     
 

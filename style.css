@@ -2,13 +2,9 @@ html {
 }
 #textbox {
   height: 5vh;
-  width: 100vw;
-  margin-left: 2vw;
   background-color: #0c0b0f;
   color:#ffffff;
-  position: fixed;
-  bottom: 10vh;
-
+  bottom: 0;
 }
 
 #text {
@@ -44,3 +40,4 @@ color: aqua
 body {
   background-color: #000;
 }
+
