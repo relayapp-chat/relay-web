@@ -40,4 +40,7 @@ color: aqua
 body {
   background-color: #000;
 }
+.text-primary {
+  color: #0daefd;
+}
 

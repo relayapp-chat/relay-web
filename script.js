@@ -34,3 +34,12 @@ socket.addEventListener('message', function (event) {
     console.log(event.data);
     document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + event.data;
 });
+
+function toggleChannelSlideover() {
+  let x = document.getElementById("channels-slideover");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
