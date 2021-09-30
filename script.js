@@ -33,6 +33,8 @@ function enter(value) {
 socket.addEventListener('message', function (event) {
     console.log(event.data);
     document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + event.data;
+    var audio = new Audio('send.mp3');
+    audio.play();
 });
 
 function toggleChannelSlideover() {
