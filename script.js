@@ -45,3 +45,9 @@ function toggleChannelSlideover() {
     x.style.display = "none";
   }
 } 
+
+
+socket.onclose = function () {
+  alert("Server Disconnected");
+  location.reload();
+};

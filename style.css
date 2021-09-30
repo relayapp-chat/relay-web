@@ -20,7 +20,8 @@ h1 {
 
 }
 p{
-color: aqua
+color: aqua;
+overflow:scroll;
 }
 
 #submitbutton {
@@ -46,5 +47,6 @@ body {
 }
 .text-primary {
   color: #0daefd;
+
 }
 
