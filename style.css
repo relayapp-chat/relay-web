@@ -4,11 +4,6 @@ html {
   height: 5vh;
   background-color: #0c0b0f;
   color:#ffffff;
-  bottom: 0;
-  position: fixed;
-  width: -moz-fit-content;
-  width: fit-content;
-  max-width: 100%;
 }
 
 #text {
