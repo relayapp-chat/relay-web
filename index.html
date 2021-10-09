@@ -167,8 +167,9 @@
   <div class="d-flex flex-column align-items-baseline">
   <p id="text"></p>
   <div class="mb-3" style="position: fixed; bottom: 0;">
-  <emoji-picker></emoji-picker>
-  <input type="text" class="form-control" id="textbox" size="35" maxlength="100" onkeypress="enter()">
+    <emoji-picker id="emoji" style="visibility: hidden" class="dark"></emoji-picker>
+    <button type="button" class="btn btn-primary" onclick="togglePicker()">Emoji</button>
+    <input type="text" class="form-control" id="textbox" size="35" maxlength="100" onkeypress="enter()">
   </div>
   </div>
 </main>  

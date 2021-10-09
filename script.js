@@ -2,6 +2,7 @@ window.onload = function() {
 document.querySelector('emoji-picker').addEventListener('emoji-click', event => {
     document.getElementById("textbox").value = document.getElementById("textbox").value + event.detail.unicode;
     focusTextbox()
+    togglePicker()
   });
 }
 let server = window.prompt("What server would you like to connect to? \n(leave blank for default)")
@@ -13,6 +14,16 @@ const socket = new WebSocket('ws://' + server);
 
 function focusTextbox() {
   document.getElementById("textbox").focus()
+}
+
+function togglePicker() {
+  let emojiButton = document.getElementById("emoji")
+  console.log(emojiButton.style)
+  if(emojiButton.style.visibility == "hidden") {
+    emojiButton.style.visibility = 'visible'
+  } else if (emojiButton.style.visibility == "visible") {
+    emojiButton.style.visibility = "hidden"
+  }
 }
 
 

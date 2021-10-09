@@ -45,3 +45,10 @@ body {
 
 }
 
+
+@media screen and (max-width: 320px) {
+  emoji-picker {
+    --num-columns: 6;
+    --category-emoji-size: 1.125rem;
+  }
+}
