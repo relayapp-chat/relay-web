@@ -10,7 +10,7 @@ console.log(server)
 if(server == null) {
   server = "localhost:8080"
 }
-const socket = new WebSocket('ws://' + server);
+const socket = new WebSocket('ws://' + server + '/server');
 
 function focusTextbox() {
   document.getElementById("textbox").focus()
